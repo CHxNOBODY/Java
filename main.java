@@ -17,21 +17,21 @@ public class main {
       System.out.print("Enter your number: ");
       number = input_number.nextInt();
 
-      while(true){
-          if(number <= 0) {
-            System.out.println("Please try again.");
-            break;
-          } else if(number >= 10) {
-            System.out.println("Please try again.");
-            break;
-          } else {
-            System.out.println("Thank you for enter.");
-            break;
-          }
-      }
+      //  while(true){
+      //     if(number <= 0) {
+      //       System.out.println("Please try again.");
+      //       break;
+      //     } else if(number >= 10) {
+      //       System.out.println("Please try again.");
+      //       break;
+      //     } else {
+      //       System.out.println("Thank you for enter.");
+      //       break;
+      //     }
+      // }
       
-      for(int i = 0; i < 10; i++) {
-        System.out.print(i);
-      }
-    }
+    //   for(int i = 0; i < 10; i++) {
+    //     System.out.print(i);
+    //   }
+     }
 }
