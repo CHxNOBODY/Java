@@ -1,11 +1,11 @@
 public class BankAccount {
     private double balance;
-    public final String accountNumber;
+    private final String accountNumber;
     public static double interestRate = 0.01;
 
-    public BankAccount(String accountNumber, double initialBalance) {
-    this.accountNumber = accountNumber;
-    this.balance = initialBalance;
+    public BankAccount(String accountNumber, double balance) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
     }
 
     public void deposit(double amount) {
@@ -18,6 +18,10 @@ public class BankAccount {
         if (amount > 0 && amount <= balance) {
             balance -= amount;
         }
+    }
+
+    public void balance() {
+        System.out.println(this.balance);
     }
 
     public double getBalance() {
