@@ -1,37 +1,20 @@
-import java.util.Scanner;
-
 public class main {
     public static void main(String[] args) {
+        Customer customer = new Customer("Alice", "1234567890", 5000);
+        customer.getAccount().deposit(1000);
+        customer.getAccount().withdraw(200);
+        System.out.println(customer.getAccount().getBalance());
+        BankAccount.interestRate = 0.05;
 
-      int age;
-      Scanner input_age = new Scanner(System.in);
+        Car car1 = CarFactory.produceCar("Civic", "Red", "1HGCM82633A123456");
+        Car car2 = CarFactory.produceCar("Accord", "Blue", "1HGCM82633A123457");
+        System.out.println("Total Car Produce: " + Car.totalCarsProduced);
+        System.out.println("Objet: " + car1.totalCarsProduced);
+        System.out.println("Class: " + Car.totalCarsProduced);
 
-      System.out.print("Enter your age: ");
-      age = input_age.nextInt();
-
-      System.out.println("You are " + age + " years old.");
-
-      int number = 0;
-      Scanner input_number = new Scanner(System.in);
-
-      System.out.print("Enter your number: ");
-      number = input_number.nextInt();
-
-      //  while(true){
-      //     if(number <= 0) {
-      //       System.out.println("Please try again.");
-      //       break;
-      //     } else if(number >= 10) {
-      //       System.out.println("Please try again.");
-      //       break;
-      //     } else {
-      //       System.out.println("Thank you for enter.");
-      //       break;
-      //     }
-      // }
-      
-    //   for(int i = 0; i < 10; i++) {
-    //     System.out.print(i);
-    //   }
-     }
+        Mage mage = new Mage("Gandalf");
+        mage.displayStats();
+        mage.castSpell();
+        mage.castSpell();
+    }
 }

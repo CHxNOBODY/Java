@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
-public class Test {
-
+public class GradingTemplate {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Total Score: ");
